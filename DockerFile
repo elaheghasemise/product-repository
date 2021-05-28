@@ -1,0 +1,4 @@
+FROM java:8
+EXPOSE 8080
+ADD /target/productrepository.jar productrepository.jar
+ENTRYPOINT ["java", "-jar", "productrepository.jar"]
